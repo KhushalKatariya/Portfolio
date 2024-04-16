@@ -447,7 +447,6 @@ input {
     margin: 5px 0;
     background-color: #525254;
     border: none;
-    /* color: azure; */
 }
 
 input::placeholder,textarea::placeholder {
@@ -473,8 +472,73 @@ textarea:focus-visible {
     float: right;
 }
 
-/* @keyframes */
+/* TOOGEL BUTTON */
 
+/* sidebar */
+.sidebar {
+    margin-top: 80px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 50%;
+    background-color: #000000;
+    color: #000000;
+    transition: right 0.3s ease;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.sidebar-nav {
+    padding: 20px;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    color: #ffd700;
+}
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.open .bar2 {
+    opacity: 0;
+}
+
+.toggle-btn.open .bar1 {
+    transform: rotate(45deg) translateY(12px);
+}
+
+.toggle-btn.open .bar3 {
+    transform: rotate(-45deg) translateY(-11px);
+}
+
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* @keyframes */
 
 /* Logo */
 @keyframes logo {
@@ -499,5 +563,62 @@ textarea:focus-visible {
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+
+/* RESPONSIVE WEB-PAGE */
+
+@media screen and (max-width: 768px) {
+    #navbar .menu {
+        display: none;
+    }
+    .img-with-text-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text-container {
+        width: 50%;
+    }
+    .profile-container {
+        flex-direction: column-reverse;
+    }
+    .about-container {
+       width: 70%;
+       text-align: justify;
+    }
+    .service-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .service-content {
+       max-width: 70%;
+       margin: 30px 0;
+    }
+    .tech-skill, .pro-skill {
+        width: 60%;
+        margin: 20px 0;
+    }
+    .skill-content {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .contact-content,.form-container {
+        width: 70%;
+    }
+    .toggle-btn {
+        display: block;
+    }
+
+    .sidebar {
+        right: -250px;
+    }
+
+    .sidebar-nav a {
+        margin-bottom: 20px;
+        text-align: center;
     }
 }

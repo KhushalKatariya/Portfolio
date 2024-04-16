@@ -20,34 +20,52 @@
                 <!-- <img src="" alt="Portfolio"> -->
                 <h1>Portfolio</h1>
             </div>
-            <div class="menu">
-                <a href="#">
+            <div class="menu" id="menus">
+                <a href="#home">
                     <h1>Home</h1>
                 </a>
-                <a href="#">
+                <a href="#about">
                     <h1>About</h1>
                 </a>
-                <a href="#">
+                <a href="#service">
                     <h1>Service</h1>
                 </a>
-                <a href="#">
+                <a href="#skill">
                     <h1>Skill</h1>
                 </a>
-                <a href="#">
+                <a href="#project">
                     <h1>Project</h1>
                 </a>
-                <a href="#">
+                <a href="#contact">
                     <h1>Contact</h1>
                 </a>
             </div>
         </nav>
+
+        <div class="toggle-btn" onclick="navBar()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#">Home</a>
+                <a href="#">Order</a>
+                <a href="#">Food</a>
+                <a href="#">Restaurant</a>
+                <a href="#">Testimonial</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </aside>
+
     </header>
 
     <!-- Main Content -->
 
     <main>
 
-        <section class="img-with-text-container">
+        <section class="img-with-text-container" id="home">
             <div class="text-container">
                 <div class="text-content">
                     <h3 style="padding: 5px 0;">Hello, it's Me</h3>
@@ -84,7 +102,7 @@
             </div>
         </section>
 
-        <section class="profile-main-container">
+        <section class="profile-main-container" id="about">
             <div class="profile-container">
                 <div class="profile-image">
                     <img src="assets/image/rofile.jpg" alt="profile-image">
@@ -110,7 +128,7 @@
             </div>
         </section>
 
-        <section class="service-main-container">
+        <section class="service-main-container" id="service">
             <div class="services">
                 <h1>My <span>Services</span></h1>
             </div>
@@ -163,7 +181,7 @@
             </div>
         </section>
 
-        <section class="skills-main-container">
+        <section class="skills-main-container" id="skill">
             <div class="skill-conatainer">
                 <div class="skill-wrapper">
                     <h1>My <span>Skills</span></h1>
@@ -243,7 +261,7 @@
             </div>
         </section>
 
-        <section class="contact-container">
+        <section class="contact-container" id="contact">
             <div class="contact">
                 <div class="contact-content">
                     <h1>Contact <span>Me</span></h1>
