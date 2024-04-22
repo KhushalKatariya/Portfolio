@@ -18,47 +18,35 @@
         <nav id="navbar">
             <div class="logo">
                 <!-- <img src="" alt="Portfolio"> -->
-                <h1>Portfolio</h1>
+                <h1>Khushal's Portfolio</h1>
             </div>
             <div class="menu" id="menus">
-                <a href="#home">
+                <a href="#home" class="items">
                     <h1>Home</h1>
                 </a>
-                <a href="#about">
+                <a href="#about" class="items">
                     <h1>About</h1>
                 </a>
-                <a href="#service">
+                <a href="#service" class="items">
                     <h1>Service</h1>
                 </a>
-                <a href="#skill">
+                <a href="#skill" class="items">
                     <h1>Skill</h1>
                 </a>
-                <a href="#project">
+                <a href="#project" class="items">
                     <h1>Project</h1>
                 </a>
-                <a href="#contact">
+                <a href="#contact" class="items">
                     <h1>Contact</h1>
                 </a>
             </div>
         </nav>
 
-        <div class="toggle-btn" onclick="navBar()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="toogle-bar">
+            <div class="bar" id="bar1"></div>
+            <div class="bar" id="bar2"></div>
+            <div class="bar" id="bar3"></div>
         </div>
-
-        <aside class="sidebar" id="sidebar">
-            <nav class="sidebar-nav">
-                <a href="#">Home</a>
-                <a href="#">Order</a>
-                <a href="#">Food</a>
-                <a href="#">Restaurant</a>
-                <a href="#">Testimonial</a>
-                <a href="#">Contact Us</a>
-            </nav>
-        </aside>
-
     </header>
 
     <!-- Main Content -->
@@ -98,14 +86,14 @@
                 </div>
             </div>
             <div class="image">
-                <img src="assets/image/profie.jpg" alt="main-image">
+                <img src="assets/image/demo.jpg" alt="main-image">
             </div>
         </section>
 
         <section class="profile-main-container" id="about">
             <div class="profile-container">
                 <div class="profile-image">
-                    <img src="assets/image/rofile.jpg" alt="profile-image">
+                    <img src="assets/image/demo.jpg" alt="profile-image">
                 </div>
                 <div class="about-container">
                     <div class="about-content">
@@ -297,7 +285,8 @@
                             <input type="text" name="name" id="" placeholder="Enter your name">
                             <input type="email" name="name" id="" placeholder="Enter your email">
                             <input type="text" name="name" id="" placeholder="Enter your subject">
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your Message"></textarea>
+                            <textarea name="message" id="" cols="30" rows="10"
+                                placeholder="Enter your Message"></textarea>
                             <div class="btn">
                                 <button>Submit</button>
                             </div>
