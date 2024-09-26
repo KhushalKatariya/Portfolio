@@ -1,0 +1,739 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #081b28;
+    position: relative;
+}
+
+span {
+    color: cyan;
+}
+
+/* navbar */
+.logo {
+    color: whitesmoke;
+    font-size: 23px;
+    font-weight: bold;
+    animation: logo 1s;
+}
+.logo a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0a2b67;
+    z-index: 123;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#navbar .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    animation: menu 1s;
+}
+
+#navbar .menu a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#navbar .menu a:hover {
+    /* background-color: #00dae5; */
+    /* border: 1px solid #00dae5; */
+    /* padding: 10px; */
+    color: #00dae5;
+    /* box-shadow: 0 2px 3px #00dae5, 0 -2px 3px #00dae5; */
+    /* border-radius: 50%; */
+}
+
+/* img-with-text-container */
+
+.img-with-text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.text-container {
+    width: 22%;
+}
+
+.text-content {
+    color: whitesmoke;
+    padding: 30px 0;
+}
+
+.auto-type {
+    color: #00dae5;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.social-icons {
+    color: #00dae5;
+    padding: 10px 0 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    /* width: 40px;
+    height: 40px; */
+    padding: 10px 14px;
+    border: 1px solid #00dae5;
+    border-radius: 50%;
+    transition: 0.1s linear 0.1s;
+}
+
+.icon:hover {
+    /* box-shadow: 0 2px 2px #00dae5, 0 -2px 2px #00dae5; */
+    background-color: #00dae5;
+    color: #081b28;
+}
+
+.btn button {
+    background-color: #04ced7;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px #04ced7, 0 -2px 3px #04ced7;
+    transition: 0.2s linear 0.1s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn button:hover {
+    padding: 11px 21px;
+    font-size: 16px;
+}
+
+.image {
+    text-align: center;
+    max-width: 50%;
+}
+
+.image img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #00dae5, 0 -5px 10px #00dae5;
+}
+
+/* profile-main-container */
+
+.profile-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+.profile-image {
+    width: 25%;
+}
+
+.profile-image img {
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #00dae5, 0 -5px 10px #00dae5;
+}
+
+.about-container {
+    color: whitesmoke;
+    width: 40%;
+}
+
+/* service-main-container */
+.service-main-container {
+    padding: 70px 0;
+}
+
+.services {
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+.service-content .icon {
+    border: none;
+    padding: 20px 0;
+    font-size: 25px;
+    color: #00dae5;
+}
+
+.service-content .icon:hover {
+    background-color: transparent;
+}
+
+.service-content {
+    padding: 0 20px 20px;
+    max-width: 20%;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px #0a2b67, 0 -10px 40px #0a2b67;
+}
+
+/* skills-main-container */
+.skills-main-container {
+    padding: 40px 0;
+    color: whitesmoke;
+}
+
+.skill-wrapper {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.skill-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tech-skill {
+    width: 20%;
+}
+
+.tech-skill .info {
+    padding: 10px 0;
+}
+
+/* Technical Skills */
+.progress-bar {
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 15px 0 0;
+    animation: range 0.1s linear forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.range {
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    background-color: #00dae5;
+    margin: 15px 0 0;
+    animation: range 1s 0.2s forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes range {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.html span {
+    width: 90%;
+}
+
+.css span {
+    width: 80%;
+}
+
+.js span {
+    width: 60%;
+}
+
+.java span {
+    width: 70%;
+}
+
+.sql span {
+    width: 80%;
+}
+
+.progress-bar span::after {
+    content: "";
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 12px;
+    animation: text 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.progress-bar.html span::after {
+    content: "90%";
+}
+
+.progress-bar.css span::after {
+    content: "80%";
+}
+
+.progress-bar.js span::after {
+    content: "60%";
+}
+
+.progress-bar.java span::after {
+    content: "70%";
+}
+
+.progress-bar.sql span::after {
+    content: "80%";
+}
+
+.progress-bar span::before {
+    content: "";
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 12px;
+    animation: text 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes text {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Professional Skills */
+.pro-skill {
+    width: 20%;
+    height: 70vh;
+    /* align-items: center; */
+    display: grid;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 15px 0 0;
+    animation: range 0.1s linear forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.range {
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    background-color: #00dae5;
+    margin: 15px 0 0;
+    animation: range 1s 0.2s forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes range {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.comm span {
+    width: 90%;
+}
+
+.creativity span {
+    width: 80%;
+}
+
+.ps span {
+    width: 75%;
+}
+
+.teamwork span {
+    width: 80%;
+}
+
+.progress-bar span::after {
+    content: "";
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 12px;
+    animation: text 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.progress-bar.comm span::after {
+    content: "90%";
+}
+
+.progress-bar.creativity span::after {
+    content: "80%";
+}
+
+.progress-bar.ps span::after {
+    content: "75%";
+}
+
+.progress-bar.teamwork span::after {
+    content: "80%";
+}
+
+.progress-bar span::before {
+    content: "";
+    background-color: #000000;
+    color: whitesmoke;
+    font-size: 12px;
+    animation: text 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes text {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* contact-container */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.1s linear 0.1s;
+}
+
+.contact-content {
+    width: 30%;
+}
+
+.contact-content h1 {
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-content strong,
+p {
+    color: whitesmoke;
+    padding: 20px 0px;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.social-icons {
+    width: 95%;
+}
+
+.form-container {
+    width: 40%;
+}
+
+.form-container form {
+    display: grid;
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px 0;
+    background-color: #525254;
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+textarea {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #525254;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+.form .btn button {
+    width: 50%;
+    float: right;
+}
+
+/* TOOGEL BUTTON */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.toogle-bar {
+    padding: 15px 50px;
+    display: none;
+    cursor: pointer;
+    transition: all 0.2s linear 0.2s;
+}
+
+.toogle-bar .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px 0;
+    transition: all 0.2s linear 0.2s;
+}
+
+/* @keyframes */
+
+/* Logo */
+@keyframes logo {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+/* Menu */
+@keyframes menu {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* RESPONSIVE WEB-PAGE */
+
+@media screen and (max-width: 600px) {
+    .text-container,.contact-content,.form-container {
+        width: 80%;
+    }
+
+    .img-with-text-container {
+        flex-direction: column;
+    }
+
+    .profile-container {
+        flex-direction: column-reverse;
+    }
+    .about-container {
+       width: 80%;
+        text-align: justify;
+    }
+    .service-container {
+        flex-direction: column;
+    }
+    .service-content {
+        max-width: 85%;
+    }
+    .skill-content {
+        flex-direction: column;
+    }
+    .tech-skill {
+        width: 80%;
+    }
+    .pro-skill {
+        margin-top: 30px;
+        width: 80%;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    /* .contact-content,.form-container {
+        width: 80%;
+    } */
+    
+
+    /* TOGGLE BAR */
+    .toogle-bar {
+        display: block;
+    }
+
+    .toogle-bar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toogle-bar.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toogle-bar.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar .menu {
+        position: fixed;
+        flex-direction: column;
+        width: 30%;
+        height: 250px;
+        padding: 15px 0;
+        top: 70px;
+        right: -50%;
+        gap: 0;
+        /* background-color: #00dae5; */
+        transition: all 0.5s linear 0.1s;
+    }
+
+    #navbar .menu.active {
+        right: 0;
+        z-index: 12;
+        background: #0a2a66;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 969px) {
+    #navbar {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* #navbar .menu{display: none;} */
+    .img-with-text-container {
+        flex-direction: column-reverse;
+    }
+    .skill-content, .contact{
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .profile-container {
+        flex-direction: column-reverse;
+        margin-top: 5rem;
+    }
+
+    .about-container {
+        width: 70%;
+        text-align: justify;
+    }
+
+    .service-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .service-content {
+        max-width: 70%;
+        margin: 30px 0;
+    }
+
+    .tech-skill,
+    .pro-skill {
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    .contact-content,
+    .form-container {
+        width: 70%;
+    }
+
+    /* TOGGLE BAR */
+    .toogle-bar {
+        display: block;
+    }
+
+    .toogle-bar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toogle-bar.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toogle-bar.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar .menu {
+        position: fixed;
+        flex-direction: column;
+        width: 30%;
+        height: 250px;
+        padding: 15px 0;
+        top: 70px;
+        right: -50%;
+        gap: 0;
+        /* background-color: #00dae5; */
+        transition: all 0.5s linear 0.1s;
+    }
+
+    #navbar .menu.active {
+        right: 0;
+        z-index: 12;
+    }
+
+}
+
+@media screen and (min-width:969px) and (max-width:1200px) {
+    #navbar .menu {
+        width: 60%;
+    }
+
+    .text-container {
+        width: 35%;
+    }
+
+    .service-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .service-content {
+        max-width: 70%;
+        margin: 30px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text-container {
+        width: 30%;
+    }
+}
