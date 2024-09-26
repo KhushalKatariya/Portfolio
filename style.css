@@ -139,7 +139,7 @@ header {
 
 .image img {
     width: 80%;
-    border-radius: 50%;
+    border-radius: 17rem;
     box-shadow: 0 5px 10px #00dae5, 0 -5px 10px #00dae5;
 }
 
@@ -158,7 +158,7 @@ header {
 
 .profile-image img {
     width: 90%;
-    border-radius: 50%;
+    border-radius: 17rem;
     box-shadow: 0 5px 10px #00dae5, 0 -5px 10px #00dae5;
 }
 
