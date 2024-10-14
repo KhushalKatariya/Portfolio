@@ -264,15 +264,15 @@ header {
 }
 
 .css span {
-    width: 80%;
+    width: 90%;
 }
 
 .js span {
-    width: 60%;
+    width: 80%;
 }
 
 .java span {
-    width: 70%;
+    width: 85%;
 }
 
 .sql span {
@@ -293,15 +293,15 @@ header {
 }
 
 .progress-bar.css span::after {
-    content: "80%";
+    content: "90%";
 }
 
 .progress-bar.js span::after {
-    content: "60%";
+    content: "80%";
 }
 
 .progress-bar.java span::after {
-    content: "70%";
+    content: "85%";
 }
 
 .progress-bar.sql span::after {
@@ -440,6 +440,8 @@ header {
 p {
     color: whitesmoke;
     padding: 20px 0px;
+    font-size: 17px;
+    letter-spacing: 1px;
 }
 
 .contact-content a {

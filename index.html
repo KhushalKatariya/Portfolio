@@ -1,303 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <nav id="navbar">
-            <div class="logo">
-                <!-- <img src="" alt="Portfolio"> -->
-                <a href="#home"><h1>Khushal's Portfolio</h1></a>
-            </div>
-            <div class="menu" id="menus">
-                <a href="#home" class="items">
-                    <h1>Home</h1>
-                </a>
-                <a href="#about" class="items">
-                    <h1>About</h1>
-                </a>
-                <a href="#service" class="items">
-                    <h1>Service</h1>
-                </a>
-                <a href="#skill" class="items">
-                    <h1>Skill</h1>
-                </a>
-                <a href="#project" class="items">
-                    <h1>Project</h1>
-                </a>
-                <a href="#contact" class="items">
-                    <h1>Contact</h1>
-                </a>
-            </div>
-        </nav>
-
-        <div class="toogle-bar">
-            <div class="bar" id="bar1"></div>
-            <div class="bar" id="bar2"></div>
-            <div class="bar" id="bar3"></div>
+      <nav id="navbar">
+        <div class="logo">
+          <!-- <img src="" alt="Portfolio"> -->
+          <a href="#home"><h1>Khushal's Portfolio</h1></a>
         </div>
+        <div class="menu" id="menus">
+          <a href="#home" class="items">
+            <h1>Home</h1>
+          </a>
+          <a href="#about" class="items">
+            <h1>About</h1>
+          </a>
+          <a href="#service" class="items">
+            <h1>Service</h1>
+          </a>
+          <a href="#skill" class="items">
+            <h1>Skill</h1>
+          </a>
+          <a href="#project" class="items">
+            <h1>Project</h1>
+          </a>
+          <a href="#contact" class="items">
+            <h1>Contact</h1>
+          </a>
+        </div>
+      </nav>
+
+      <div class="toogle-bar">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+      </div>
     </header>
 
     <!-- Main Content -->
 
     <main>
+      <section class="img-with-text-container" id="home">
+        <div class="text-container">
+          <div class="text-content">
+            <h3 style="padding: 5px 0">Hello, it's Me</h3>
+            <h1 style="padding: 5px 0; font-size: 30px">Khushal Katariya</h1>
+            <h2 style="padding: 5px 0">
+              And I'm <span class="auto-type"></span>
+            </h2>
+          </div>
+          <div class="social-icons">
+            <div class="facbook icon" style="padding: 10px 15px">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="whatsapp icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="instagram icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="github icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="linkedin icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="btn">
+            <button>More About Me</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./assets/image/profile-photo.jpg" alt="main-image" />
+        </div>
+      </section>
 
-        <section class="img-with-text-container" id="home">
-            <div class="text-container">
-                <div class="text-content">
-                    <h3 style="padding: 5px 0;">Hello, it's Me</h3>
-                    <h1 style="padding: 5px 0; font-size: 30px;">Khushal Katariya</h1>
-                    <h2 style="padding: 5px 0;">And I'm <span class="auto-type"></span></h2>
-                    <p style="padding: 5px 0;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis blanditiis magnam eum
-                        eius a optio?
-                    </p>
+      <section class="profile-main-container" id="about">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="./assets/image/profile-photo.jpg" alt="profile-image" />
+          </div>
+          <div class="about-container">
+            <div class="about-content">
+              <h1 style="padding: 10px 0; font-size: 40px">
+                About <span>Me</span>
+              </h1>
+              <h3 style="padding: 10px 0">Full Stack Developer!</h3>
+              <p style="padding: 10px 0">
+                Hi, I'm Khushal Katariya, a passionate IT professional with a
+                strong foundation in web development, and software engineering.
+                I have hands-on experience in building dynamic, user-friendly
+                web applications and have completed a Java Full Stack course,
+                where I gained expertise in front-end technologies like HTML,
+                CSS, JavaScript, and ReactJS, as well as back-end frameworks
+                like Python, Django, Java, Spring, and Hibernate. My knowledge
+                extends to database management with MySQL and SQL.
+              </p>
+              <p>
+                During my internship at Tops Technology, I sharpened my skills
+                by working on real-world projects, and I recently built
+                MoviZone, an app for booking movie tickets.
+              </p>
+              <p>
+                With a strong problem-solving mindset and a keen interest in
+                learning new technologies, I'm always looking for opportunities
+                to grow as a developer and contribute to innovative projects.
+              </p>
+            </div>
+            <!-- <div class="btn" style="padding: 10px 0">
+              <button>More About Me</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="service-main-container" id="service">
+        <div class="services">
+          <h1>My <span>Services</span></h1>
+        </div>
+        <div class="service-container">
+          <div class="service-content">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="service">
+              <h1 style="padding: 10px 0">UI/UX Design</h1>
+              <p style="padding: 10px 0 30px">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+                ullam, quisquam libero dolorum amet sapiente porro natus iste
+                ipsam enim.
+              </p>
+            </div>
+            <div class="btn">
+              <button>learn more</button>
+            </div>
+          </div>
+          <div class="service-content">
+            <div class="icon">
+              <i class="fa-solid fa-crop-simple"></i>
+            </div>
+            <div class="service">
+              <h1 style="padding: 10px 0">Web Design</h1>
+              <p style="padding: 10px 0 30px">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+                ullam, quisquam libero dolorum amet sapiente porro natus iste
+                ipsam enim.
+              </p>
+            </div>
+            <div class="btn">
+              <button>learn more</button>
+            </div>
+          </div>
+          <div class="service-content">
+            <div class="icon">
+              <i class="fa-brands fa-android"></i>
+            </div>
+            <div class="service">
+              <h1 style="padding: 10px 0">App Design</h1>
+              <p style="padding: 10px 0 30px">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+                ullam, quisquam libero dolorum amet sapiente porro natus iste
+                ipsam enim.
+              </p>
+            </div>
+            <div class="btn">
+              <button>learn more</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="skills-main-container" id="skill">
+        <div class="skill-conatainer">
+          <div class="skill-wrapper">
+            <h1>My <span>Skills</span></h1>
+          </div>
+          <div class="skill-content">
+            <div class="tech-skill">
+              <h1>Technical Skills</h1>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-brands fa-html5"
+                    style="color: salmon; padding: 10px"
+                  ></i
+                ></strong>
+                <h3>HTML</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar html">
+                  <span class="range"></span>
                 </div>
-                <div class="social-icons">
-                    <div class="facbook icon" style="padding:10px 15px;">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                    <div class="whatsapp icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </div>
-                    <div class="instagram icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="github icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="linkedin icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
+              </div>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-brands fa-css3-alt"
+                    style="color: blue; padding: 10px"
+                  ></i
+                ></strong>
+                <h3>CSS</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar css">
+                  <span class="range"></span>
                 </div>
+              </div>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-brands fa-js"
+                    style="color: yellow; padding: 10px"
+                  ></i
+                ></strong>
+                <h3>Java Script</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar js">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-brands fa-java"
+                    style="color: #0263b4; padding: 10px"
+                  ></i
+                ></strong>
+                <h3>Java</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar java">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-brands fa-python"
+                    style="padding: 10px; color: yellow"
+                  ></i
+                ></strong>
+                <h3>Python</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar js">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <strong>
+                  <img
+                    src="assets/image/django.png"
+                    alt="django"
+                    style="width: 8%; border-radius: 8px"
+                  />
+                </strong>
+                <h3>DJango</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar js">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <strong
+                  ><i
+                    class="fa-solid fa-database"
+                    style="color: gray; padding: 10px"
+                  ></i
+                ></strong>
+                <h3>SQL</h3>
+                <!-- <input type="range" min="1" max="100" value="90"> -->
+                <div class="progress-bar sql">
+                  <span class="range"></span>
+                </div>
+              </div>
+            </div>
+            <div class="pro-skill">
+              <h1>Professional Skills</h1>
+              <div class="info">
+                <h3>Communication</h3>
+                <div class="progress-bar comm">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Creativity</h3>
+                <div class="progress-bar creativity">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Problem Solving</h3>
+                <div class="progress-bar ps">
+                  <span class="range"></span>
+                </div>
+              </div>
+              <div class="info">
+                <h3>Teamwork</h3>
+                <div class="progress-bar teamwork">
+                  <span class="range"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-container" id="contact">
+        <div class="contact">
+          <div class="contact-content">
+            <h1>Contact <span>Me</span></h1>
+            <strong>Let's Work Togather</strong>
+            <p>
+              We'd love to hear from you! Whether you have questions, comments
+              feel free to reach out using the information below.
+            </p>
+            <a href="#">khushalkatariya743344@gmail.com</a>
+            <p class="phonr-number">+91 6351299971</p>
+            <div class="social-icons">
+              <!-- <div class="facbook icon" style="padding: 10px 15px">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div> -->
+              <div class="whatsapp icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="instagram icon">
+                <a href=""></a>
+              </div>
+              <div class="github icon">
+                <a href="https://github.com/KhushalKatariya" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="linkedin icon">
+                <a
+                  href="https://www.linkedin.com/in/khushalkatariya/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="form">
+              <form action="">
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Enter your name"
+                />
+                <input
+                  type="email"
+                  name="name"
+                  id=""
+                  placeholder="Enter your email"
+                />
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  placeholder="Enter your subject"
+                />
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your Message"
+                ></textarea>
                 <div class="btn">
-                    <button>More About Me</button>
+                  <button>Submit</button>
                 </div>
+              </form>
             </div>
-            <div class="image">
-                <img src="./assets/image/profile-photo.jpg" alt="main-image">
-            </div>
-        </section>
-
-        <section class="profile-main-container" id="about">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="./assets/image/profile-photo.jpg" alt="profile-image">
-                </div>
-                <div class="about-container">
-                    <div class="about-content">
-                        <h1 style="padding: 10px 0; font-size: 40px;">About <span>Me</span></h1>
-                        <h3 style="padding: 10px 0;">Full Stack Developer!</h3>
-                        <p style="padding: 10px 0;">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque debitis corporis assumenda
-                            natus ipsam eaque eius laborum sit animi, accusantium mollitia quam amet eligendi nostrum
-                            nemo corrupti beatae officia totam adipisci neque facilis. Eaque dolores omnis, assumenda
-                            quo aut autem quaerat aliquam praesentium eum, ratione modi molestiae qui, quae accusantium
-                            soluta! Doloremque, nemo molestiae? Molestiae, eos qui vero a tenetur nobis? Tenetur
-                            provident consequatur quo, saepe odio voluptatum reiciendis, error assumenda facere illum
-                            consectetur esse perferendis architecto libero expedita dignissimos?
-                        </p>
-                    </div>
-                    <div class="btn" style="padding: 10px 0;">
-                        <button>More About Me</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="service-main-container" id="service">
-            <div class="services">
-                <h1>My <span>Services</span></h1>
-            </div>
-            <div class="service-container">
-                <div class="service-content">
-                    <div class="icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="service">
-                        <h1 style="padding: 10px 0;">UI/UX Design</h1>
-                        <p style="padding: 10px 0 30px;">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ullam, quisquam libero
-                            dolorum amet sapiente porro natus iste ipsam enim.
-                        </p>
-                    </div>
-                    <div class="btn">
-                        <button>learn more</button>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <div class="icon">
-                        <i class="fa-solid fa-crop-simple"></i>
-                    </div>
-                    <div class="service">
-                        <h1 style="padding: 10px 0;">Web Design</h1>
-                        <p style="padding: 10px 0 30px;">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ullam, quisquam libero
-                            dolorum amet sapiente porro natus iste ipsam enim.
-                        </p>
-                    </div>
-                    <div class="btn">
-                        <button>learn more</button>
-                    </div>
-                </div>
-                <div class="service-content">
-                    <div class="icon">
-                        <i class="fa-brands fa-android"></i>
-                    </div>
-                    <div class="service">
-                        <h1 style="padding: 10px 0;">App Design</h1>
-                        <p style="padding: 10px 0 30px;">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ullam, quisquam libero
-                            dolorum amet sapiente porro natus iste ipsam enim.
-                        </p>
-                    </div>
-                    <div class="btn">
-                        <button>learn more</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-main-container" id="skill">
-            <div class="skill-conatainer">
-                <div class="skill-wrapper">
-                    <h1>My <span>Skills</span></h1>
-                </div>
-                <div class="skill-content">
-                    <div class="tech-skill">
-                        <h1>Technical Skills</h1>
-                        <div class="info">
-                            <strong><i class="fa-brands fa-html5" style="color: salmon; padding: 10px;"></i></strong>
-                            <h3>HTML</h3>
-                            <!-- <input type="range" min="1" max="100" value="90"> -->
-                            <div class="progress-bar html">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <strong><i class="fa-brands fa-css3-alt" style="color: blue; padding: 10px;"></i></strong>
-                            <h3>CSS</h3>
-                            <!-- <input type="range" min="1" max="100" value="90"> -->
-                            <div class="progress-bar css">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <strong><i class="fa-brands fa-js" style="color: yellow; padding: 10px;"></i></strong>
-                            <h3>Java Script</h3>
-                            <!-- <input type="range" min="1" max="100" value="90"> -->
-                            <div class="progress-bar js">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <strong><i class="fa-brands fa-java" style="color: #0263b4; padding: 10px;"></i></strong>
-                            <h3>Java</h3>
-                            <!-- <input type="range" min="1" max="100" value="90"> -->
-                            <div class="progress-bar java">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <strong><i class="fa-solid fa-database" style="color: gray; padding: 10px;"></i></strong>
-                            <h3>SQL</h3>
-                            <!-- <input type="range" min="1" max="100" value="90"> -->
-                            <div class="progress-bar sql">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pro-skill">
-                        <h1>Professional Skills</h1>
-                        <div class="info">
-                            <h3>Communication</h3>
-                            <div class="progress-bar comm">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <h3>Creativity</h3>
-                            <div class="progress-bar creativity">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <h3>Problem Solving</h3>
-                            <div class="progress-bar ps">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <h3>Teamwork</h3>
-                            <div class="progress-bar teamwork">
-                                <span class="range"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-container" id="contact">
-            <div class="contact">
-                <div class="contact-content">
-                    <h1>Contact <span>Me</span></h1>
-                    <strong>Let's Work Togather</strong>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate deserunt architecto
-                        repudiandae doloribus, repellat nulla maxime officiis perferendis minima explicabo sequi minus
-                        nihil rem.
-                    </p>
-                    <a href="#">contact@gmail.com</a>
-                    <p class="phonr-number">+91 6549873210</p>
-                    <div class="social-icons">
-                        <div class="facbook icon" style="padding:10px 15px;">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="whatsapp icon">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="instagram icon">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="github icon">
-                            <i class="fa-brands fa-github"></i>
-                        </div>
-                        <div class="linkedin icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-container">
-                    <div class="form">
-                        <form action="">
-                            <input type="text" name="name" id="" placeholder="Enter your name">
-                            <input type="email" name="name" id="" placeholder="Enter your email">
-                            <input type="text" name="name" id="" placeholder="Enter your subject">
-                            <textarea name="message" id="" cols="30" rows="10"
-                                placeholder="Enter your Message"></textarea>
-                            <div class="btn">
-                                <button>Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
